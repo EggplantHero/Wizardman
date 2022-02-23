@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b878384a0a541c04fb0f7853feb5500e, type: 3}
+  m_Name: PlayerData
+  m_EditorClassIdentifier: 
+  jumpVelocity: 13
+  jumpSFX: 1
+  climbSpeed: 5
+  ladderExitSpeed: 5
+  defaultBounciness: 0
+  hitstunBounciness: 10
+  defaultFriction: 0
+  hitstunFriction: 0
+  fireball: {fileID: 4210695855718541120, guid: 3b75a8b27d5cbf142a56766126cddc3e, type: 3}
+  icecube: {fileID: 2713862018373711966, guid: 96b6584f6421158409df2163ed857b2f, type: 3}
+  lightning: {fileID: 7038149159459609018, guid: 05d9a426f06500e4eba5b143a7917f09, type: 3}
+  conjureRecoil: 5
+  fireballSpeed: 7
+  deltaTick: 30
+  timeStopScale: 0.05
+  timestopKnockback: 20
+  clockSFX: 8
+  lightningSpeed: 20

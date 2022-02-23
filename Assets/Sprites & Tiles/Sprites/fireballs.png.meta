@@ -1,0 +1,802 @@
+fileFormatVersion: 2
+guid: 120ee876653703f48a9e55c9a5643e6d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2804419141160456874
+    second: _ireballs_0
+  - first:
+      213: -7340118042369598998
+    second: _ireballs_1
+  - first:
+      213: -1037851211218529449
+    second: _ireballs_2
+  - first:
+      213: -6002130617261619923
+    second: _ireballs_3
+  - first:
+      213: -2681176199894890698
+    second: _ireballs_4
+  - first:
+      213: 6751520085294429755
+    second: _ireballs_5
+  - first:
+      213: 9079143446590027809
+    second: _ireballs_6
+  - first:
+      213: 3788578984343536193
+    second: _ireballs_7
+  - first:
+      213: 1359895097765165338
+    second: _ireballs_8
+  - first:
+      213: 357464061583512613
+    second: _ireballs_9
+  - first:
+      213: 5686772214224662000
+    second: _ireballs_10
+  - first:
+      213: -2388969153690389792
+    second: _ireballs_11
+  - first:
+      213: 3207012432758347040
+    second: _ireballs_12
+  - first:
+      213: 1541313563056290227
+    second: _ireballs_13
+  - first:
+      213: 3580966978456436533
+    second: _ireballs_14
+  - first:
+      213: 8954635064548030263
+    second: _ireballs_15
+  - first:
+      213: -99540142668160504
+    second: _ireballs_16
+  - first:
+      213: 3074559590536977029
+    second: _ireballs_17
+  - first:
+      213: 2363398520277682237
+    second: _ireballs_18
+  - first:
+      213: -1234575331398773435
+    second: _ireballs_19
+  - first:
+      213: -8077049817948106795
+    second: _ireballs_20
+  - first:
+      213: -7646663317880332879
+    second: _ireballs_21
+  - first:
+      213: -5302089151437567361
+    second: _ireballs_22
+  - first:
+      213: -6389524265542650067
+    second: _ireballs_23
+  - first:
+      213: 1344583472667917864
+    second: _ireballs_24
+  - first:
+      213: 6174361376130395264
+    second: _ireballs_25
+  - first:
+      213: 3065525574171197089
+    second: _ireballs_26
+  - first:
+      213: -4188896761789653373
+    second: _ireballs_27
+  - first:
+      213: -7163771982408094523
+    second: _ireballs_28
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: _ireballs_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 152
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d23d946a3b419d0800000000000000
+      internalID: -2804419141160456874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ireballs_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 153
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae9df13b789a22a90800000000000000
+      internalID: -7340118042369598998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ireballs_2
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7535c9972dfc891f0800000000000000
+      internalID: -1037851211218529449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ireballs_3
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 152
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2500a6110624bca0800000000000000
+      internalID: -6002130617261619923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ireballs_4
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 135
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6378801a37c8acad0800000000000000
+      internalID: -2681176199894890698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ireballs_5
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 133
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b36b3e91fb732bd50800000000000000
+      internalID: 6751520085294429755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ireballs_6
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 133
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12870de7cd89ffd70800000000000000
+      internalID: 9079143446590027809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ireballs_7
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 133
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1428e45738cb39430800000000000000
+      internalID: 3788578984343536193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ireballs_8
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 135
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a19761ae2615fd210800000000000000
+      internalID: 1359895097765165338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ireballs_9
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 121
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52457aa8ba7f5f400800000000000000
+      internalID: 357464061583512613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ireballs_10
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 121
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd2c63f2397bee40800000000000000
+      internalID: 5686772214224662000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ireballs_11
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 121
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e23be6463da8ded0800000000000000
+      internalID: -2388969153690389792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ireballs_12
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 99
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02592dce0d8918c20800000000000000
+      internalID: 3207012432758347040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ireballs_13
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 101
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b93675f488d36510800000000000000
+      internalID: 1541313563056290227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ireballs_14
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 103
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53fbc4f7e7622b130800000000000000
+      internalID: 3580966978456436533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ireballs_15
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 103
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73774a3c521454c70800000000000000
+      internalID: 8954635064548030263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ireballs_16
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 102
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8026f5384cc5e9ef0800000000000000
+      internalID: -99540142668160504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ireballs_17
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 105
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a1aba68a70baa20800000000000000
+      internalID: 3074559590536977029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ireballs_18
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 77
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d38c5dfae6a7cc020800000000000000
+      internalID: 2363398520277682237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ireballs_19
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 75
+        width: 31
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5451483f648eddee0800000000000000
+      internalID: -1234575331398773435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ireballs_20
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 75
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dfc1101cfd88ef80800000000000000
+      internalID: -8077049817948106795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ireballs_21
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 75
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bd9bb4e93891e590800000000000000
+      internalID: -7646663317880332879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ireballs_22
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 45
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a8c1922023b66b0800000000000000
+      internalID: -5302089151437567361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ireballs_23
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 49
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27779c9889d357a0800000000000000
+      internalID: -6389524265542650067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ireballs_24
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 47
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e7b336b8be8a210800000000000000
+      internalID: 1344583472667917864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ireballs_25
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 52
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ce42b55fcbfa550800000000000000
+      internalID: 6174361376130395264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ireballs_26
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 29
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ae7952944fea8a20800000000000000
+      internalID: 3065525574171197089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ireballs_27
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 28
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e5eb0c69c0ed5c0800000000000000
+      internalID: -4188896761789653373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _ireballs_28
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 28
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc6ba8565b259c90800000000000000
+      internalID: -7163771982408094523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
