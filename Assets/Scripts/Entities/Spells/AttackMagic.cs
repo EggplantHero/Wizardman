@@ -16,6 +16,15 @@ public class AttackMagic : Spell
 
     public override void OnTriggerEnter2D(Collider2D col)
     {
+        DealDamage(col);
+    }
+    public override void OnCollisionEnter2D(Collision2D col)
+    {
+        DealDamage(col.collider);
+    }
+
+    public void DealDamage(Collider2D col)
+    {
         if (!col.IsTouching(collisionSenses.Hitbox))
         {
             return;

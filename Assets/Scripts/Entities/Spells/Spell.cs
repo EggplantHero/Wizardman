@@ -5,7 +5,6 @@ using UnityEngine;
 public class Spell : Entity
 {
     public SpellType spellType;
-    public virtual void OnTriggerStay2D(Collider2D col) { }
 }
 
 public enum SpellType

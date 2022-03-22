@@ -16,3 +16,4 @@ MonoBehaviour:
   database: {fileID: 11400000, guid: 1797ad9ea97a8374cbcff1e32b50361b, type: 2}
   Container:
     Items: []
+  equippedSpell: {fileID: 0}

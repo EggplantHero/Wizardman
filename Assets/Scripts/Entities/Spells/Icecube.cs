@@ -23,14 +23,4 @@ public class Icecube : AttackMagic
             movement.SetMass(10000);
         }
     }
-
-    public override void OnCollisionEnter2D(Collision2D col)
-    {
-        base.OnCollisionEnter2D(col);
-        IDamageable damageable = col.collider.gameObject.GetComponent<IDamageable>();
-        if (damageable != null)
-        {
-            damageable.Damage(1, DamageType.DMG_Ice);
-        }
-    }
 }

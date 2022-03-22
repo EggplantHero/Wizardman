@@ -58,10 +58,6 @@ public class Player : Entity
     public override void Update()
     {
         base.Update();
-        if (combat.Hitstun)
-        {
-            stateMachine.SetState(DamageState);
-        }
     }
 
     private void OnApplicationQuit()

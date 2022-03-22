@@ -16,4 +16,4 @@ MonoBehaviour:
   uiDisplay: {fileID: 21300000, guid: d4d6d5b767a04094e881fa8da4fd119a, type: 3}
   type: 0
   description: Takes like medicine. Which it is.
-  restoreHealthValue: 16
+  restoreHealthValue: 1

@@ -9,18 +9,21 @@ public class PlayerDamageState : PlayerState
     }
     public override void OnEnter()
     {
+        // Debug.Log("entering damaaged state");
         base.OnEnter();
         player.collisionSenses.SetMaterial(player.collisionSenses.Bouncy);
     }
 
     public override void OnExit()
     {
+        // Debug.Log("on exit hook");
         base.OnExit();
         player.collisionSenses.SetMaterial(player.collisionSenses.ZeroFriction);
     }
 
     public override void ExitState()
     {
+        // Debug.Log("exiting state");
         player.stateMachine.SetState(player.IdleState);
     }
 

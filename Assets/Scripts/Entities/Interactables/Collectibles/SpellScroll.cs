@@ -4,14 +4,6 @@ using UnityEngine;
 
 public class SpellScroll : GroundItem<SpellScrollObject>
 {
-    private AudioManager audioManager;
-    public SoundType pickupSFX;
-
-    void Start()
-    {
-        audioManager = GameObject.FindObjectOfType<AudioManager>();
-    }
-
     void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.name == "PlayerBody")
@@ -32,11 +24,6 @@ public class SpellScroll : GroundItem<SpellScrollObject>
                 ReRender();
             }
         }
-    }
-
-    public void PlaySFX()
-    {
-        audioManager.Play(pickupSFX, audioManager.sfx_interactables_track);
     }
 
 }

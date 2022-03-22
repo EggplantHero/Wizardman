@@ -10,7 +10,7 @@ public class CoreComponent : MonoBehaviour
     {
         entity = transform.parent.GetComponent<Entity>();
 
-        if (entity is null) { Debug.LogError("The parent object of this core component is not an entity."); }
+        if (entity is null) { Debug.LogError("The parent object of this core component is not an entity. Please attach a script to the gameobject that inherits from 'entity' class."); }
     }
 
 }

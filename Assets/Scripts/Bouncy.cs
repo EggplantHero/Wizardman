@@ -8,7 +8,7 @@ public class Bouncy : MonoBehaviour
     [SerializeField] private float bounceHeight;
     public void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.collider.name == "Feet")
+        if (GetComponentInChildren<Collider2D>().IsTouchingLayers(LayerMask.GetMask("PlayerFeet")))
         {
             player = col.gameObject.GetComponentInParent<Player>();
             player.movement.SetVelocityY(bounceHeight * Movement.gravityDirection);

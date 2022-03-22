@@ -64,6 +64,10 @@ public class CollisionSenses : CoreComponent
     {
         get => feetCollider;
     }
+    public Collider2D HeadCollider
+    {
+        get => headCollider;
+    }
     public Collider2D Hitbox
     {
         get => hitbox;

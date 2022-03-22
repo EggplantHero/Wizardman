@@ -5,32 +5,51 @@ using UnityEngine;
 
 public class Combat : CoreComponent, IDamageable
 {
-    [SerializeField] private int health = 5;
+    [SerializeField] private int maxHealth = 5;
+    [SerializeField] private int currentHealth;
     [SerializeField] DamageType[] vulnerabilities;
     private bool hitstun = false;
+
+    void Start()
+    {
+        currentHealth = maxHealth;
+    }
 
     public bool Hitstun
     {
         get => hitstun;
     }
 
-    public int Health
+    public int CurrentHealth
     {
-        get => health;
+        get => currentHealth;
+    }
+    public int MaxHealth
+    {
+        get => maxHealth;
     }
 
     public void Damage(int amount, DamageType damageType)
     {
         if (vulnerabilities.Contains(damageType))
         {
-            health -= amount;
+            currentHealth -= amount;
             SetHitstun(true);
-            if (health <= 0)
+            if (currentHealth <= 0)
             {
                 Die();
             }
         }
     }
+    public void Heal(int amount)
+    {
+        currentHealth += amount;
+        if (currentHealth >= maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+    }
+
 
     public void Knockback(Vector2 direction, float strength)
     {
@@ -44,7 +63,7 @@ public class Combat : CoreComponent, IDamageable
 
     public void SetHealth(int value)
     {
-        health = value;
+        currentHealth = value;
     }
 
     public void Die()
