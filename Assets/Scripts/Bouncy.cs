@@ -8,10 +8,15 @@ public class Bouncy : MonoBehaviour
     [SerializeField] private float bounceHeight;
     public void OnCollisionEnter2D(Collision2D col)
     {
-        if (GetComponentInChildren<Collider2D>().IsTouchingLayers(LayerMask.GetMask("PlayerFeet")))
+        if (GetComponentInChildren<Collider2D>().IsTouchingLayers(LayerMask.GetMask("Player")))
         {
             player = col.gameObject.GetComponentInParent<Player>();
-            player.movement.SetVelocityY(bounceHeight * Movement.gravityDirection);
+            Debug.Log(col.collider);
+            Debug.Log(player.collisionSenses.FeetCollider);
+            if (col.collider == player.collisionSenses.FeetCollider)
+            {
+                player.movement.SetVelocityY(bounceHeight * Movement.gravityDirection);
+            }
         }
     }
 }

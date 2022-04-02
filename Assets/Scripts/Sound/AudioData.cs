@@ -7,6 +7,7 @@ using UnityEngine.Audio;
 public class AudioData : ScriptableObject
 {
     public Sound[] sounds;
+    public Sound[] music;
 }
 
 [System.Serializable]
@@ -34,6 +35,9 @@ public enum SoundType
     SFX_HealthPotion,
     SFX_ManaPotion,
     SFX_Ticktock,
+    SFX_LightningCast,
+    SFX_LightningBoom,
+    SFX_LightningHit,
     BGM_Wizardman,
     BGM_Lizardman,
     BGM_Battle,

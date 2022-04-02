@@ -51,10 +51,6 @@ public class CollisionSenses : CoreComponent
     {
         get => bodyCollider.IsTouchingLayers(LayerMask.GetMask("Player"));
     }
-    public bool stomped
-    {
-        get => bodyCollider.IsTouchingLayers(LayerMask.GetMask("PlayerFeet"));
-    }
 
     public Collider2D BodyCollider
     {

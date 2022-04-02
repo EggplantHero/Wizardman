@@ -8,7 +8,7 @@ public class PlayerLightningState : PlayerCastState
     {
     }
 
-    public AttackMagic lightning;
+    public Entity lightning;
 
     public override void OnEnter()
     {
@@ -17,17 +17,25 @@ public class PlayerLightningState : PlayerCastState
         if (player.collisionSenses.grounded && Movement.gravityDirection == 1)
         {
             player.animator.Play("Casting");
+            return;
         }
-        else
+        player.combat.SetImmune(true);
+        lightning = GameObject.Instantiate(playerData.lightning, player.transform.position, Quaternion.identity).GetComponent<Entity>();
+        lightning.transform.SetParent(player.transform);
+        lightning.transform.localPosition = Vector3.zero;
+        if (Movement.gravityDirection == -1)
         {
-            if (Movement.gravityDirection == -1)
-            {
-                player.movement.FlipY();
-            }
-            player.movement.SetVelocityX(0);
-            player.movement.SetGravity(0);
-            player.movement.SetVelocityY(-playerData.lightningSpeed);
+            player.movement.FlipY();
         }
+        player.movement.SetVelocityX(0);
+        player.movement.SetGravity(0);
+        player.movement.SetVelocityY(-playerData.lightningSpeed);
+
+    }
+
+    public override void OnCast(float input)
+    {
+        ExitState();
     }
 
     public override void OnCollisionEnter2D(Collision2D col)
@@ -40,7 +48,8 @@ public class PlayerLightningState : PlayerCastState
             player.movement.FlipY();
         }
 
-        ExitState();
+        player.audioManager.Play(SoundType.SFX_LightningBoom, player.audioManager.sfx_damage_track);
+        player.animator.Play("LightningLand");
     }
 
     public override void Update()
@@ -50,6 +59,12 @@ public class PlayerLightningState : PlayerCastState
 
     public override void ExitState()
     {
+        if (lightning)
+        {
+            GameObject.Destroy(lightning.gameObject);
+        }
+        player.combat.SetImmune(false);
+
         base.ExitState();
     }
 }

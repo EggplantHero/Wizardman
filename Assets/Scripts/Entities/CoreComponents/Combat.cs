@@ -9,10 +9,12 @@ public class Combat : CoreComponent, IDamageable
     [SerializeField] private int currentHealth;
     [SerializeField] DamageType[] vulnerabilities;
     private bool hitstun = false;
+    private int originalLayer;
 
     void Start()
     {
         currentHealth = maxHealth;
+        originalLayer = entity.gameObject.layer;
     }
 
     public bool Hitstun
@@ -29,16 +31,18 @@ public class Combat : CoreComponent, IDamageable
         get => maxHealth;
     }
 
+    public DamageType[] Vulnerabilities
+    {
+        get => vulnerabilities;
+    }
+
     public void Damage(int amount, DamageType damageType)
     {
-        if (vulnerabilities.Contains(damageType))
+        currentHealth -= amount;
+        SetHitstun(true);
+        if (currentHealth <= 0)
         {
-            currentHealth -= amount;
-            SetHitstun(true);
-            if (currentHealth <= 0)
-            {
-                Die();
-            }
+            Die();
         }
     }
     public void Heal(int amount)
@@ -59,6 +63,40 @@ public class Combat : CoreComponent, IDamageable
     public void SetHitstun(bool value)
     {
         hitstun = value;
+    }
+
+    public void SetImmuneTimed(int seconds)
+    {
+        StartCoroutine(IFrames(seconds));
+    }
+
+    public void SetImmune(bool value)
+    {
+        if (value)
+        {
+            SetLayerForAll(LayerMask.NameToLayer("Iframes"));
+        }
+        else
+        {
+            SetLayerForAll(originalLayer);
+        }
+    }
+
+    IEnumerator IFrames(int seconds)
+    {
+        SetImmune(true);
+        entity.GetComponent<SpriteRenderer>().color = new Color(100, 100, 100, 0.6f);
+        yield return new WaitForSeconds(seconds);
+        SetImmune(false);
+        entity.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 1);
+    }
+
+    void SetLayerForAll(int layer)
+    {
+        foreach (Transform child in entity.transform.GetComponentsInChildren<Transform>())
+        {
+            child.gameObject.layer = layer;
+        }
     }
 
     public void SetHealth(int value)

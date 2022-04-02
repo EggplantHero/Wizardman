@@ -15,7 +15,7 @@ MonoBehaviour:
   categories:
   - name: Tutorial
     levels:
-    - levelName: Jump
+    - levelName: TestArea
     - levelName: Climb
   - name: Fireball
     levels:

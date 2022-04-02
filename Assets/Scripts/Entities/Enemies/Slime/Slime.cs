@@ -36,7 +36,7 @@ public class Slime : Enemy
 
     public override void OnCollisionEnter2D(Collision2D col)
     {
-        if (collisionSenses.stomped)
+        if (col.collider.name == "Feet")
         {
             audioManager.Play(stompSFX, audioManager.sfx_damage_track);
             combat.Die();

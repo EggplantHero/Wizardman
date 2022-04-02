@@ -20,9 +20,9 @@ MonoBehaviour:
   hitstunBounciness: 10
   defaultFriction: 0
   hitstunFriction: 0
-  fireball: {fileID: 4210695855718541120, guid: 3b75a8b27d5cbf142a56766126cddc3e, type: 3}
+  fireball: {fileID: 3775911061062770157, guid: 3b75a8b27d5cbf142a56766126cddc3e, type: 3}
   icecube: {fileID: 2713862018373711966, guid: 96b6584f6421158409df2163ed857b2f, type: 3}
-  lightning: {fileID: 7038149159459609018, guid: 05d9a426f06500e4eba5b143a7917f09, type: 3}
+  lightning: {fileID: 5306928984733716451, guid: 05d9a426f06500e4eba5b143a7917f09, type: 3}
   conjureRecoil: 6
   fireballSpeed: 7
   deltaTick: 30
