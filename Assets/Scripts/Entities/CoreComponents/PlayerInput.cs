@@ -38,4 +38,12 @@ public class PlayerInput : CoreComponent
         float input = context.ReadValue<float>();
         entity.stateMachine.CurrentState.OnClimb(input);
     }
+    public void OnPause(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            float input = context.ReadValue<float>();
+            entity.stateMachine.CurrentState.OnPause(input);
+        }
+    }
 }

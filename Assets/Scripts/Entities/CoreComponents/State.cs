@@ -19,7 +19,8 @@ public class State
 
     public virtual void OnEnter()
     {
-        entity.animator.Play(animation);
+        if (entity.animator)
+            entity.animator.Play(animation);
     }
     public virtual void OnExit() { }
     public virtual void Update() { }
@@ -37,6 +38,7 @@ public class State
     public virtual void OnJump(float input) { }
     public virtual void OnCast(float input) { }
     public virtual void OnClimb(float input) { }
+    public virtual void OnPause(float input) { }
     #endregion
 
     #region Interfaces

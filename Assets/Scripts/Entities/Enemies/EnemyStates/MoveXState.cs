@@ -12,7 +12,6 @@ public class MoveXState : State
     {
         base.OnEnter();
         entity.collisionSenses.SetMaterial(entity.collisionSenses.ZeroFriction);
-
     }
 
     public override void Update()

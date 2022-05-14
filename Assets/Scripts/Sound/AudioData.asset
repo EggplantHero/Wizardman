@@ -73,8 +73,23 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     source: {fileID: 0}
-  music:
   - name: 12
+    clip: {fileID: 8300000, guid: 92d4aba58fee70a4cb57cad473e9f111, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: 13
+    clip: {fileID: 8300000, guid: 22880900e8c3c984393c1f540f9b021f, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: 14
+    clip: {fileID: 8300000, guid: 4d07e895d41dea24fbd5e18f8527de73, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  music:
+  - name: 15
     clip: {fileID: 8300000, guid: 4863340998cbdad4cbe96df552ba7c2f, type: 3}
     volume: 1
     pitch: 1

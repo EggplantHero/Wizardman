@@ -26,6 +26,6 @@ public class Enemy : Entity
         player.stateMachine.SetState(player.DamageState);
         player.combat.Knockback(direction, knockbackStrength);
 
-        player.audioManager.Play(SoundType.SFX_TakeDamage, player.audioManager.sfx_damage_track);
+        Singleton.Main.AudioManager.Play(SoundType.SFX_TakeDamage, Singleton.Main.AudioManager.sfx_damage_track);
     }
 }

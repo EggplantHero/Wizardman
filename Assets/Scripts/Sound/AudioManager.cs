@@ -6,7 +6,6 @@ using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
-    public static AudioManager instance;
     public AudioData audioData;
     [HideInInspector]
     public AudioSource bgm_track;
@@ -21,7 +20,6 @@ public class AudioManager : MonoBehaviour
 
     void Awake()
     {
-        if (instance) Destroy(this.gameObject); else instance = this;
         sfx_movement_track = gameObject.AddComponent<AudioSource>();
         sfx_damage_track = gameObject.AddComponent<AudioSource>();
         sfx_interactables_track = gameObject.AddComponent<AudioSource>();

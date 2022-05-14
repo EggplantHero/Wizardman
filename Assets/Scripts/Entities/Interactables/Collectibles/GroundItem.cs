@@ -7,13 +7,8 @@ public class GroundItem<O> : MonoBehaviour, ISerializationCallbackReceiver
 where O : ItemObject
 {
     public O itemObject;
-    protected AudioManager audioManager;
-    public SoundType pickupSFX;
 
-    void Start()
-    {
-        audioManager = GameObject.FindObjectOfType<AudioManager>();
-    }
+    public SoundType pickupSFX;
 
     public void OnBeforeSerialize()
     {
@@ -32,6 +27,6 @@ where O : ItemObject
 
     public void PlaySFX()
     {
-        audioManager.Play(pickupSFX, audioManager.sfx_interactables_track);
+        Singleton.Main.AudioManager.Play(pickupSFX, Singleton.Main.AudioManager.sfx_interactables_track);
     }
 }

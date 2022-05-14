@@ -37,7 +37,7 @@ public class PlayerTimestopState : PlayerCastState
     public override void FixedUpdate()
     {
         base.Update();
-        player.audioManager.Play(playerData.clockSFX, player.audioManager.sfx_movement_track);
+        Singleton.Main.AudioManager.Play(playerData.clockSFX, Singleton.Main.AudioManager.sfx_movement_track);
         clock.secondHand.angle += -playerData.deltaTick;
         clock.secondHand.Rotate(clock.secondHand.angle);
 

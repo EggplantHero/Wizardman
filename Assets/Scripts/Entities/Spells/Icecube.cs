@@ -5,9 +5,20 @@ using UnityEngine;
 public class Icecube : AttackMagic
 {
     private float defaultMass;
-    public void Start()
+    public override void Start()
     {
+        base.Start();
         defaultMass = rbody.mass;
+    }
+
+    public override void OnCollisionEnter2D(Collision2D col)
+    {
+        base.OnCollisionEnter2D(col);
+        Debug.Log(col.collider.name);
+        if (col.collider.name == "Terrain")
+        {
+            Singleton.Main.AudioManager.Play(SoundType.SFX_IceCollision, Singleton.Main.AudioManager.sfx_movement_track);
+        }
     }
     public override void Update()
     {

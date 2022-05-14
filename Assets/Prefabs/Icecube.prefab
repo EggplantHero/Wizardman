@@ -252,7 +252,7 @@ MonoBehaviour:
   damage: 1
   damageType: 3
   knockbackStrength: 5
-  castSFX: 5
+  castSFX: 12
   OnHitSFX: 3
   destroyOnHit: 0
 --- !u!1 &1151002665770448192

@@ -38,7 +38,7 @@ public class Slime : Enemy
     {
         if (col.collider.name == "Feet")
         {
-            audioManager.Play(stompSFX, audioManager.sfx_damage_track);
+            Singleton.Main.AudioManager.Play(stompSFX, Singleton.Main.AudioManager.sfx_damage_track);
             combat.Die();
         }
         else

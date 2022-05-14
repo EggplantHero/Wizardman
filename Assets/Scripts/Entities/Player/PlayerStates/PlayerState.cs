@@ -11,5 +11,4 @@ public class PlayerState : State
         this.player = player;
         this.playerData = player.playerData;
     }
-
 }

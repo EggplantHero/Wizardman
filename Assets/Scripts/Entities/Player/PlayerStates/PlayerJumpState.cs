@@ -13,6 +13,6 @@ public class PlayerJumpState : PlayerState
         base.OnEnter();
         player.movement.SetVelocityY(playerData.jumpVelocity * Movement.gravityDirection);
         player.stateMachine.SetState(player.AerialState);
-        player.audioManager.Play(playerData.jumpSFX, player.audioManager.sfx_movement_track);
+        Singleton.Main.AudioManager.Play(playerData.jumpSFX, Singleton.Main.AudioManager.sfx_movement_track);
     }
 }

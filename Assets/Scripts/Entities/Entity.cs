@@ -5,7 +5,6 @@ using UnityEngine;
 public class Entity : MonoBehaviour
 {
     public StateMachine stateMachine { get; private set; }
-    public AudioManager audioManager { get; private set; }
     public Animator animator { get; private set; }
     public Rigidbody2D rbody { get; private set; }
     public Movement movement { get; private set; }
@@ -15,7 +14,6 @@ public class Entity : MonoBehaviour
 
     public virtual void Awake()
     {
-        audioManager = FindObjectOfType<AudioManager>();
         animator = GetComponent<Animator>();
         rbody = GetComponent<Rigidbody2D>();
         stateMachine = GetComponentInChildren<StateMachine>();

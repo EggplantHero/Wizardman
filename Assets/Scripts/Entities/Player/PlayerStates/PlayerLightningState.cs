@@ -35,6 +35,7 @@ public class PlayerLightningState : PlayerCastState
 
     public override void OnCast(float input)
     {
+        player.movement.ResetGravity();
         ExitState();
     }
 
@@ -48,8 +49,9 @@ public class PlayerLightningState : PlayerCastState
             player.movement.FlipY();
         }
 
-        player.audioManager.Play(SoundType.SFX_LightningBoom, player.audioManager.sfx_damage_track);
+        Singleton.Main.AudioManager.Play(SoundType.SFX_LightningBoom, Singleton.Main.AudioManager.sfx_damage_track);
         player.animator.Play("LightningLand");
+        CinemachineShake.Instance.ShakeCamera(5f, .2f);
     }
 
     public override void Update()

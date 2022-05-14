@@ -12,9 +12,18 @@ public class AttackMagic : Spell
     [SerializeField] public SoundType OnHitSFX;
     [SerializeField] public bool destroyOnHit;
     private bool sfxAvailable = true;
-    private void Start()
+    public virtual void Start()
     {
-        audioManager.Play(castSFX, audioManager.sfx_damage_track);
+        Debug.Log("fireball start");
+        Debug.Log(castSFX);
+        Debug.Log(Singleton.Main.AudioManager.sfx_damage_track);
+        Singleton.Main.AudioManager.Play(castSFX, Singleton.Main.AudioManager.sfx_damage_track);
+    }
+
+    public override void Update()
+    {
+        base.Update();
+        Debug.Log("existing...");
     }
 
     public override void OnTriggerEnter2D(Collider2D col)
@@ -59,7 +68,7 @@ public class AttackMagic : Spell
 
     public void PlaySFX()
     {
-        if (sfxAvailable) audioManager.Play(OnHitSFX, audioManager.sfx_damage_track);
+        if (sfxAvailable) Singleton.Main.AudioManager.Play(OnHitSFX, Singleton.Main.AudioManager.sfx_damage_track);
         sfxAvailable = false;
     }
 }
