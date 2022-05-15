@@ -14,16 +14,12 @@ public class AttackMagic : Spell
     private bool sfxAvailable = true;
     public virtual void Start()
     {
-        Debug.Log("fireball start");
-        Debug.Log(castSFX);
-        Debug.Log(Singleton.Main.AudioManager.sfx_damage_track);
-        Singleton.Main.AudioManager.Play(castSFX, Singleton.Main.AudioManager.sfx_damage_track);
+        Singleton.Main.AudioManager.Play(castSFX);
     }
 
     public override void Update()
     {
         base.Update();
-        Debug.Log("existing...");
     }
 
     public override void OnTriggerEnter2D(Collider2D col)
@@ -68,7 +64,7 @@ public class AttackMagic : Spell
 
     public void PlaySFX()
     {
-        if (sfxAvailable) Singleton.Main.AudioManager.Play(OnHitSFX, Singleton.Main.AudioManager.sfx_damage_track);
+        if (sfxAvailable) Singleton.Main.AudioManager.Play(OnHitSFX);
         sfxAvailable = false;
     }
 }

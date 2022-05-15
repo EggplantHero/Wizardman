@@ -27,6 +27,6 @@ where O : ItemObject
 
     public void PlaySFX()
     {
-        Singleton.Main.AudioManager.Play(pickupSFX, Singleton.Main.AudioManager.sfx_interactables_track);
+        Singleton.Main.AudioManager.Play(pickupSFX);
     }
 }

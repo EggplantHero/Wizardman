@@ -17,7 +17,7 @@ public class Icecube : AttackMagic
         Debug.Log(col.collider.name);
         if (col.collider.name == "Terrain")
         {
-            Singleton.Main.AudioManager.Play(SoundType.SFX_IceCollision, Singleton.Main.AudioManager.sfx_movement_track);
+            Singleton.Main.AudioManager.Play(SoundType.SFX_IceCollision);
         }
     }
     public override void Update()

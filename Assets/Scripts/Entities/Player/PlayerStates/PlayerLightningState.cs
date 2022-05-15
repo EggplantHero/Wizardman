@@ -49,7 +49,7 @@ public class PlayerLightningState : PlayerCastState
             player.movement.FlipY();
         }
 
-        Singleton.Main.AudioManager.Play(SoundType.SFX_LightningBoom, Singleton.Main.AudioManager.sfx_damage_track);
+        Singleton.Main.AudioManager.Play(SoundType.SFX_LightningBoom);
         player.animator.Play("LightningLand");
         CinemachineShake.Instance.ShakeCamera(5f, .2f);
     }
