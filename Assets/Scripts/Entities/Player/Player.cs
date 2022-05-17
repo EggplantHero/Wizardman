@@ -53,6 +53,7 @@ public class Player : Entity
     {
         stateMachine.Initialize(OpenState);
         castAvailable = true;
+        Singleton.Main.UIManager.Health.Initialize(combat.MaxHealth);
     }
 
     public override void Update()

@@ -13,15 +13,7 @@ MonoBehaviour:
   m_Name: LevelSelectData
   m_EditorClassIdentifier: 
   categories:
-  - name: Tutorial
+  - name: Testing
     levels:
     - levelName: TestArea
-    - levelName: Climb
-  - name: Fireball
-    levels:
-    - levelName: Fireball-1
-    - levelName: Fireball-2
-  - name: Gravity
-    levels:
     - levelName: Gravity-1
-    - levelName: 

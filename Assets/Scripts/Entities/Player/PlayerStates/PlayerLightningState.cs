@@ -43,6 +43,13 @@ public class PlayerLightningState : PlayerCastState
     {
         Debug.Log(col);
         base.OnCollisionEnter2D(col);
+        if (col.gameObject.name == "BreakableWood")
+        {
+            Singleton.Main.AudioManager.Play(SoundType.SFX_FireballExplosion);
+            player.movement.SetVelocityY(-playerData.lightningSpeed);
+            return;
+        };
+
         player.movement.ResetGravity();
         if (Movement.gravityDirection == -1)
         {

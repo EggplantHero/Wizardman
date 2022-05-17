@@ -14,6 +14,7 @@ public class SpellScroll : GroundItem<SpellScrollObject>
             switcheroo = itemObject;
             itemObject = player.inventory.equippedSpell;
             player.inventory.EquipSpell(switcheroo);
+            Singleton.Main.UIManager.EquippedSpell.SetScroll(switcheroo);
             player.castAvailable = true;
             if (itemObject.spell == SpellType.SPELL_None)
             {

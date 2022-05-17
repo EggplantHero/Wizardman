@@ -36,15 +36,6 @@ public class Combat : CoreComponent, IDamageable
         get => vulnerabilities;
     }
 
-    public void Damage(int amount, DamageType damageType)
-    {
-        currentHealth -= amount;
-        SetHitstun(true);
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
-    }
     public void Heal(int amount)
     {
         currentHealth += amount;
@@ -54,10 +45,20 @@ public class Combat : CoreComponent, IDamageable
         }
     }
 
+    public void Damage(int amount, DamageType damageType)
+    {
+        currentHealth -= amount;
+        SetHitstun(true);
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
 
     public void Knockback(Vector2 direction, float strength)
     {
-        entity.movement.AddKnockback(direction, strength);
+        if (entity.movement)
+            entity.movement.AddKnockback(direction, strength);
     }
 
     public void SetHitstun(bool value)
@@ -106,7 +107,6 @@ public class Combat : CoreComponent, IDamageable
 
     public void Die()
     {
-        Debug.Log("die");
         Destroy(entity.gameObject);
     }
 }

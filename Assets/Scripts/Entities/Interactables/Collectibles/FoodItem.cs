@@ -11,6 +11,7 @@ public class FoodItem : GroundItem<FoodObject>
             PlaySFX();
             Player player = collider.gameObject.GetComponentInParent<Player>();
             player.combat.Heal(itemObject.restoreHealthValue);
+            Singleton.Main.UIManager.Health.HandleDamage(player.combat.CurrentHealth);
             Destroy(this.gameObject);
         }
 

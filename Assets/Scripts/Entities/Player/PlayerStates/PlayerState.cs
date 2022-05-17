@@ -11,4 +11,10 @@ public class PlayerState : State
         this.player = player;
         this.playerData = player.playerData;
     }
+
+    public override void OnPause(float input)
+    {
+        base.OnPause(input);
+        Singleton.Main.UIManager.PauseGame();
+    }
 }

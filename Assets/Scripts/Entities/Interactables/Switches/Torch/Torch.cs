@@ -6,7 +6,7 @@ public class Torch : Switch, ITriggerable
 {
     public TorchLitState LitState { get; private set; }
     public TorchUnlitState UnlitState { get; private set; }
-    public GameObject lights;
+    public GameObject lights { get; private set; }
     public bool flip;
 
     public override void Awake()

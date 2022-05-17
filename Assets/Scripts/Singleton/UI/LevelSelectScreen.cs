@@ -25,4 +25,13 @@ public class LevelSelectScreen : MonoBehaviour
             }
         }
     }
+
+    public void Hide()
+    {
+        this.gameObject.SetActive(false);
+    }
+    public void Show()
+    {
+        this.gameObject.SetActive(true);
+    }
 }

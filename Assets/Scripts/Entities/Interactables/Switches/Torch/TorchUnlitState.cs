@@ -18,12 +18,6 @@ public class TorchUnlitState : SwitchOffState
         torch.lights.SetActive(false);
     }
 
-    public override void OnTriggerEnter2D(Collider2D col)
-    {
-        Icecube icecube = col.GetComponent<Icecube>();
-        AttackMagic fireball = col.GetComponent<AttackMagic>();
-    }
-
     public override void OnTrigger(DamageType damageType)
     {
         base.OnTrigger(damageType);

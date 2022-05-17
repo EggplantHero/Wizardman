@@ -20,6 +20,7 @@ public class Enemy : Entity
     {
         Player player = col.gameObject.GetComponent<Player>();
         player.combat.Damage(damage, damageType);
+        Singleton.Main.UIManager.Health.HandleDamage(player.combat.CurrentHealth);
         player.combat.SetImmuneTimed(2);
 
         Vector2 direction = col.transform.position - transform.position;

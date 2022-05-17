@@ -17,12 +17,6 @@ public class TorchLitState : SwitchOnState
         torch.lights.SetActive(true);
     }
 
-    public override void OnTriggerEnter2D(Collider2D col)
-    {
-        Icecube icecube = col.GetComponent<Icecube>();
-        AttackMagic fireball = col.GetComponent<AttackMagic>();
-    }
-
     public override void OnTrigger(DamageType damageType)
     {
         base.OnTrigger(damageType);

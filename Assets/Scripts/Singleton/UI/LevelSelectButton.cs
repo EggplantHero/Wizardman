@@ -11,5 +11,6 @@ public class LevelSelectButton : MonoBehaviour
     {
         SceneManager.LoadScene(LevelName);
         Time.timeScale = 1;
+        Singleton.Main.UIManager.PauseGame();
     }
 }
