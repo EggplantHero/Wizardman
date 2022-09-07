@@ -1,103 +1,43 @@
 fileFormatVersion: 2
-guid: cedcd780eef4a8f40a83c0543c93cf9f
+guid: 7f7dcd9a06d82ed4f9adbc8a125caf8d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1955448553306655712
-    second: Background_0
+      213: 2573105514961851873
+    second: slime_sheet_0
   - first:
-      213: 7014286043975846214
-    second: Background_1
+      213: -858116301061389039
+    second: slime_sheet_1
   - first:
-      213: -9078219959484023005
-    second: Background_2
+      213: -2876305192402510723
+    second: slime_sheet_2
   - first:
-      213: -4817409605821441833
-    second: Background_3
+      213: 5435695481434593775
+    second: slime_sheet_3
   - first:
-      213: -2146368423942107817
-    second: Background_4
+      213: 977580742666956163
+    second: slime_sheet_4
   - first:
-      213: -3958678274390686719
-    second: Background_5
+      213: 4358664215368101856
+    second: slime_sheet_5
   - first:
-      213: -4821837225436941063
-    second: Background_6
+      213: 8351250199021618296
+    second: slime_sheet_6
   - first:
-      213: 7028156775451301730
-    second: Background_7
+      213: 833379742880054782
+    second: slime_sheet_7
   - first:
-      213: -6975036532566498788
-    second: Background_8
+      213: -8444444399680907828
+    second: slime_sheet_8
   - first:
-      213: 5657654767279156548
-    second: Background_9
+      213: 7012510931633825705
+    second: slime_sheet_9
   - first:
-      213: 3751706319272519800
-    second: Background_10
+      213: -3763985466561839850
+    second: slime_sheet_10
   - first:
-      213: 5689521111678254879
-    second: Background_11
-  - first:
-      213: -1184522252448690435
-    second: Background_12
-  - first:
-      213: 2669065081613744858
-    second: Background_13
-  - first:
-      213: 4124766128871187191
-    second: Background_14
-  - first:
-      213: -5396132258965337617
-    second: Background_15
-  - first:
-      213: -6884224323981422677
-    second: Background_0
-  - first:
-      213: -3696051380107271510
-    second: Background_1
-  - first:
-      213: 8222454533072939405
-    second: Background_2
-  - first:
-      213: 8305014007553818654
-    second: Background_3
-  - first:
-      213: 2508923481127806282
-    second: Background_4
-  - first:
-      213: -9176556582500135996
-    second: Background_5
-  - first:
-      213: 711730425826271678
-    second: Background_6
-  - first:
-      213: 4239939485300866903
-    second: Background_7
-  - first:
-      213: -3399691747804598238
-    second: Background_8
-  - first:
-      213: -4409494451909334252
-    second: Background_9
-  - first:
-      213: -8738461305040589317
-    second: Background_10
-  - first:
-      213: -8395882499515659696
-    second: Background_11
-  - first:
-      213: 5282996176200744522
-    second: Background_12
-  - first:
-      213: -3256344001144254854
-    second: Background_13
-  - first:
-      213: -3039288701803109568
-    second: Background_14
-  - first:
-      213: 6640983031641614755
-    second: Background_15
+      213: -3432022088785984151
+    second: slime_sheet_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -142,7 +82,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -185,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Background_0
+      name: slime_sheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 116
-        width: 32
-        height: 32
+        y: 34
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bafcbf693725670a0800000000000000
-      internalID: -6884224323981422677
+      spriteID: 1e556ec35d185b320800000000000000
+      internalID: 2573105514961851873
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Background_1
+      name: slime_sheet_1
       rect:
         serializedVersion: 2
-        x: 38
-        y: 116
-        width: 32
-        height: 32
+        x: 17
+        y: 34
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa22d113adcf4bcc0800000000000000
-      internalID: -3696051380107271510
+      spriteID: 115834b45cb5714f0800000000000000
+      internalID: -858116301061389039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Background_2
+      name: slime_sheet_2
       rect:
         serializedVersion: 2
-        x: 76
-        y: 116
-        width: 32
-        height: 32
+        x: 34
+        y: 34
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d89ec9955d60c1270800000000000000
-      internalID: 8222454533072939405
+      spriteID: d7c9c35baaf4518d0800000000000000
+      internalID: -2876305192402510723
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Background_3
+      name: slime_sheet_3
       rect:
         serializedVersion: 2
-        x: 114
-        y: 116
-        width: 32
-        height: 32
+        x: 51
+        y: 34
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -262,104 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1083eeec36514370800000000000000
-      internalID: 8305014007553818654
+      spriteID: fe9da16ad387f6b40800000000000000
+      internalID: 5435695481434593775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Background_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 78
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a45624dfc9c71d220800000000000000
-      internalID: 2508923481127806282
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Background_5
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 78
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4cb8ece586256a080800000000000000
-      internalID: -9176556582500135996
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Background_6
-      rect:
-        serializedVersion: 2
-        x: 76
-        y: 78
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eb166372d0390e900800000000000000
-      internalID: 711730425826271678
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Background_7
-      rect:
-        serializedVersion: 2
-        x: 114
-        y: 78
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 75fb28a6f7a47da30800000000000000
-      internalID: 4239939485300866903
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Background_8
+      name: slime_sheet_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 40
-        width: 32
-        height: 32
+        y: 17
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -367,20 +223,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 220b7422e5ed1d0d0800000000000000
-      internalID: -3399691747804598238
+      spriteID: 38d2de98180119d00800000000000000
+      internalID: 977580742666956163
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Background_9
+      name: slime_sheet_5
       rect:
         serializedVersion: 2
-        x: 38
-        y: 40
-        width: 32
-        height: 32
+        x: 17
+        y: 17
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -388,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41b63e298245ec2c0800000000000000
-      internalID: -4409494451909334252
+      spriteID: 0efe83cb2061d7c30800000000000000
+      internalID: 4358664215368101856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Background_10
+      name: slime_sheet_6
       rect:
         serializedVersion: 2
-        x: 76
-        y: 40
-        width: 32
-        height: 32
+        x: 34
+        y: 17
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -409,20 +265,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfd2f8dcdbfbab680800000000000000
-      internalID: -8738461305040589317
+      spriteID: 87408172fc995e370800000000000000
+      internalID: 8351250199021618296
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Background_11
+      name: slime_sheet_7
       rect:
         serializedVersion: 2
-        x: 114
-        y: 40
-        width: 32
-        height: 32
+        x: 51
+        y: 17
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -430,20 +286,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05a43789955db7b80800000000000000
-      internalID: -8395882499515659696
+      spriteID: efd3f51f572c09b00800000000000000
+      internalID: 833379742880054782
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Background_12
+      name: slime_sheet_8
       rect:
         serializedVersion: 2
         x: 0
-        y: 2
-        width: 32
-        height: 32
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -451,20 +307,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4e31302809f05940800000000000000
-      internalID: 5282996176200744522
+      spriteID: cc59b7f1f8e4fca80800000000000000
+      internalID: -8444444399680907828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Background_13
+      name: slime_sheet_9
       rect:
         serializedVersion: 2
-        x: 38
-        y: 2
-        width: 32
-        height: 32
+        x: 17
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -472,20 +328,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7e825142642fc2d0800000000000000
-      internalID: -3256344001144254854
+      spriteID: 9a7e397d981715160800000000000000
+      internalID: 7012510931633825705
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Background_14
+      name: slime_sheet_10
       rect:
         serializedVersion: 2
-        x: 76
-        y: 2
-        width: 32
-        height: 32
+        x: 34
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -493,20 +349,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 043ea2f470742d5d0800000000000000
-      internalID: -3039288701803109568
+      spriteID: 61d39dd1923a3cbc0800000000000000
+      internalID: -3763985466561839850
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Background_15
+      name: slime_sheet_11
       rect:
         serializedVersion: 2
-        x: 114
-        y: 2
-        width: 32
-        height: 32
+        x: 51
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -514,8 +370,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a92560c1e2892c50800000000000000
-      internalID: 6640983031641614755
+      spriteID: 9650e9808120f50d0800000000000000
+      internalID: -3432022088785984151
       vertices: []
       indices: 
       edges: []

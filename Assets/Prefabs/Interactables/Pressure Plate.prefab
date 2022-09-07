@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8862201771684805617}
   - component: {fileID: 102335508635698202}
   - component: {fileID: 1748451655293510668}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: Pressure Plate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139,7 +139,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c489e14654ef754b92c0c63cac4ca73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  On: 0
 --- !u!1 &2219674567229170097
 GameObject:
   m_ObjectHideFlags: 0
@@ -150,7 +149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1049075240706585649}
   - component: {fileID: 8257490072658032573}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: StateMachine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -193,7 +192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 232651987804297926}
   - component: {fileID: 7972322527258693531}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: CollisionSenses
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -245,7 +244,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7278077073615850988}
   - component: {fileID: 5315731181317447134}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}

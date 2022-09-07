@@ -12,10 +12,12 @@ public class InventoryObject : ScriptableObject
     public ItemDatabaseObject database;
     public Inventory Container;
     public SpellScrollObject equippedSpell;
+
     public void EquipSpell(SpellScrollObject spell)
     {
         equippedSpell = spell;
     }
+
     public void AddItem(Item _item, int _amount)
     {
         for (int i = 0; i < Container.Items.Count; i++)

@@ -47,6 +47,7 @@ public class Combat : CoreComponent, IDamageable
 
     public void Damage(int amount, DamageType damageType)
     {
+        if (!vulnerabilities.Contains(damageType)) return;
         currentHealth -= amount;
         SetHitstun(true);
         if (currentHealth <= 0)

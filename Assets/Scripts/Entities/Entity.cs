@@ -44,6 +44,11 @@ public class Entity : MonoBehaviour
         if (stateMachine)
             stateMachine.CurrentState.OnCollisionExit2D(col);
     }
+    public virtual void OnCollisionStay2D(Collision2D col)
+    {
+        if (stateMachine)
+            stateMachine.CurrentState.OnCollisionStay2D(col);
+    }
     public virtual void OnTriggerEnter2D(Collider2D col)
     {
         if (stateMachine)

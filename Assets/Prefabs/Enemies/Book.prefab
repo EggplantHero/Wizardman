@@ -88,7 +88,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 2
   currentHealth: 2
-  vulnerabilities: 01000000
+  vulnerabilities: 0100000003000000
 --- !u!1 &2992504261428520560
 GameObject:
   m_ObjectHideFlags: 0
@@ -322,7 +322,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1890796667
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 2
   m_Sprite: {fileID: 2875826903541400445, guid: ba4130ecb0a138b468ba273d9aea00ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

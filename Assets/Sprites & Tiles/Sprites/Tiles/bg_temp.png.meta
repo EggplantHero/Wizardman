@@ -197,6 +197,15 @@ TextureImporter:
   - first:
       213: 6641073063344235322
     second: bg_temp_0
+  - first:
+      213: -1154371651519003433
+    second: bg_temp_1
+  - first:
+      213: -5313975909431047228
+    second: bg_temp_2
+  - first:
+      213: -2901916926846398305
+    second: bg_temp_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -287,12 +296,12 @@ TextureImporter:
       name: bg_temp_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 4
+        y: 4
         width: 128
         height: 128
-      alignment: 9
-      pivot: {x: 0.5625, y: 0.5625}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

@@ -34,17 +34,4 @@ public class Slime : Enemy
         base.Update();
     }
 
-    public override void OnCollisionEnter2D(Collision2D col)
-    {
-        if (col.collider.name == "Feet")
-        {
-            Singleton.Main.AudioManager.Play(stompSFX);
-            combat.Die();
-        }
-        else
-        {
-            base.OnCollisionEnter2D(col);
-        }
-    }
-
 }

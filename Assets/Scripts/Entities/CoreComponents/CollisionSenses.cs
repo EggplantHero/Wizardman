@@ -31,25 +31,29 @@ public class CollisionSenses : CoreComponent
 
     public bool grounded
     {
-        get => feetCollider.IsTouchingLayers(LayerMask.GetMask("Ground"));
+        get => feetCollider == null ? false : feetCollider.IsTouchingLayers(LayerMask.GetMask("Ground"));
+    }
+
+    public bool stomped
+    {
+        get => headCollider == null ? false : headCollider.IsTouchingLayers(LayerMask.GetMask("Ground"));
     }
 
     public bool facingWall
     {
-        get => frontCollider.IsTouchingLayers(LayerMask.GetMask("Ground"));
-
+        get => frontCollider == null ? false : frontCollider.IsTouchingLayers(LayerMask.GetMask("Ground"));
     }
     public bool backToWall
     {
-        get => backCollider.IsTouchingLayers(LayerMask.GetMask("Ground"));
+        get => backCollider == null ? false : backCollider.IsTouchingLayers(LayerMask.GetMask("Ground"));
     }
     public bool touchingLadder
     {
-        get => bodyCollider.IsTouchingLayers(LayerMask.GetMask("Ladder"));
+        get => bodyCollider == null ? false : bodyCollider.IsTouchingLayers(LayerMask.GetMask("Ladder"));
     }
     public bool touchingPlayer
     {
-        get => bodyCollider.IsTouchingLayers(LayerMask.GetMask("Player"));
+        get => bodyCollider == null ? false : bodyCollider.IsTouchingLayers(LayerMask.GetMask("Player"));
     }
 
     public Collider2D BodyCollider

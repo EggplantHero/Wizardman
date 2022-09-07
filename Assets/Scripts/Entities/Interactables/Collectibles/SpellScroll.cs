@@ -4,8 +4,20 @@ using UnityEngine;
 
 public class SpellScroll : GroundItem<SpellScrollObject>
 {
+    public int equipSpellCooldown;
+
+    public bool spellEquippable;
+
+    void Awake()
+    {
+        equipSpellCooldown = 1;
+        spellEquippable = true;
+    }
+
     void OnTriggerEnter2D(Collider2D collider)
     {
+        if (!spellEquippable) return;
+
         if (collider.name == "PlayerBody")
         {
             PlaySFX();
@@ -24,7 +36,16 @@ public class SpellScroll : GroundItem<SpellScrollObject>
             {
                 ReRender();
             }
+            StartCoroutine(Cooldown());
         }
+
+    }
+
+    IEnumerator Cooldown()
+    {
+        spellEquippable = false;
+        yield return new WaitForSeconds(equipSpellCooldown);
+        spellEquippable = true;
     }
 
 }

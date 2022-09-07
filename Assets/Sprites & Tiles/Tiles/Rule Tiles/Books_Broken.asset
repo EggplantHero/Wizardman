@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52f942ca9511f354a8efbf325740f4ab, type: 3}
+  m_Name: Books_Broken
+  m_EditorClassIdentifier: 
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Transform:
+    e00: 1
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  m_InstancedGameObject: {fileID: 0}
+  m_Flags: 1
+  m_ColliderType: 1
+  Sprites:
+  - Sprite: {fileID: 8742136169782176736, guid: 4cef228015d3a1345b9b959fa0e646ea, type: 3}
+    Weight: 1
+  - Sprite: {fileID: 7370012354686943851, guid: 4cef228015d3a1345b9b959fa0e646ea, type: 3}
+    Weight: 1
+  - Sprite: {fileID: 2528337616796575732, guid: 4cef228015d3a1345b9b959fa0e646ea, type: 3}
+    Weight: 1
+  - Sprite: {fileID: -789450074863327464, guid: 4cef228015d3a1345b9b959fa0e646ea, type: 3}
+    Weight: 2
+  - Sprite: {fileID: 7210103315120786496, guid: 4cef228015d3a1345b9b959fa0e646ea, type: 3}
+    Weight: 2
+  - Sprite: {fileID: 5135600972976341684, guid: 4cef228015d3a1345b9b959fa0e646ea, type: 3}
+    Weight: 2
+  - Sprite: {fileID: -7900612186315568874, guid: 4cef228015d3a1345b9b959fa0e646ea, type: 3}
+    Weight: 1
+  - Sprite: {fileID: -4050614482796639782, guid: 4cef228015d3a1345b9b959fa0e646ea, type: 3}
+    Weight: 1
+  - Sprite: {fileID: 9118833952342934999, guid: 4cef228015d3a1345b9b959fa0e646ea, type: 3}
+    Weight: 1
+  - Sprite: {fileID: 7802394636839493627, guid: 4cef228015d3a1345b9b959fa0e646ea, type: 3}
+    Weight: 3
+  - Sprite: {fileID: 4323338340486707414, guid: 4cef228015d3a1345b9b959fa0e646ea, type: 3}
+    Weight: 3
+  - Sprite: {fileID: -6517263819456801439, guid: 4cef228015d3a1345b9b959fa0e646ea, type: 3}
+    Weight: 10
+  - Sprite: {fileID: 2283590024037504889, guid: 4cef228015d3a1345b9b959fa0e646ea, type: 3}
+    Weight: 3
+  - Sprite: {fileID: 2386525907629442899, guid: 4cef228015d3a1345b9b959fa0e646ea, type: 3}
+    Weight: 3
+  - Sprite: {fileID: 390538880014027896, guid: 4cef228015d3a1345b9b959fa0e646ea, type: 3}
+    Weight: 1
+  - Sprite: {fileID: -2269874468459068458, guid: 4cef228015d3a1345b9b959fa0e646ea, type: 3}
+    Weight: 2
+  - Sprite: {fileID: 3223735119569840092, guid: 4cef228015d3a1345b9b959fa0e646ea, type: 3}
+    Weight: 2
+  - Sprite: {fileID: 1541060810235155845, guid: 4cef228015d3a1345b9b959fa0e646ea, type: 3}
+    Weight: 1

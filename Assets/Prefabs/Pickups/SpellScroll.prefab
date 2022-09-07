@@ -47,6 +47,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemObject: {fileID: 11400000, guid: 6f52aa39f97cc7849890e2619e46600c, type: 2}
   pickupSFX: 6
+  equipSpellCooldown: 0
+  spellEquippable: 0
 --- !u!212 &6030205925881996902
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class PlayerLightningState : PlayerCastState
 {
@@ -43,10 +44,13 @@ public class PlayerLightningState : PlayerCastState
     {
         Debug.Log(col);
         base.OnCollisionEnter2D(col);
-        if (col.gameObject.name == "BreakableWood")
+        Debug.Log(col.collider.name);
+        
+        if (col.gameObject.name == "Breakable")
         {
             Singleton.Main.AudioManager.Play(SoundType.SFX_FireballExplosion);
             player.movement.SetVelocityY(-playerData.lightningSpeed);
+            DestroyTerrain(col, player.transform.position, 1f);
             return;
         };
 
@@ -75,5 +79,25 @@ public class PlayerLightningState : PlayerCastState
         player.combat.SetImmune(false);
 
         base.ExitState();
+    }
+
+
+    public void DestroyTerrain(Collision2D col, Vector3 explosionLocation, float radius)
+    {
+        Tilemap[] tilemaps = col.gameObject.GetComponentsInChildren<Tilemap>();
+        for (int x = -(int)radius; x < radius; x++)
+        {
+            for (int y = -(int)radius; y < radius; y++)
+            {
+                foreach (Tilemap terrain in tilemaps)
+                {
+                    Vector3Int tilePos = terrain.WorldToCell(explosionLocation + new Vector3(x, y, 0));
+                    if (terrain.GetTile(tilePos) != null)
+                    {
+                        terrain.SetTile(tilePos, null);
+                    }
+                }
+            }
+        }
     }
 }

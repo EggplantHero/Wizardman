@@ -14,6 +14,11 @@ public class Enemy : Entity
         {
             DamagePlayer(col, DamageType.DMG_Physical);
         }
+        if (col.collider.name == "Feet")
+        {
+            Singleton.Main.AudioManager.Play(SoundType.SFX_Bounce);
+            combat.Damage(1, DamageType.DMG_Physical);
+        }
     }
 
     public void DamagePlayer(Collision2D col, DamageType damageType)
