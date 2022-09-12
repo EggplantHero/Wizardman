@@ -1046,6 +1046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 7
+  defaultMovementSpeed: 0
   defaultGravityScale: 4.2
 --- !u!1 &8033630838383418114
 GameObject:
@@ -1240,6 +1241,10 @@ PrefabInstance:
     - target: {fileID: 4767245983856834561, guid: c5892ec5385c68147b1bc7523f710ec2, type: 3}
       propertyPath: m_Color.r
       value: 0.67111826
+      objectReference: {fileID: 0}
+    - target: {fileID: 4767245983856834561, guid: c5892ec5385c68147b1bc7523f710ec2, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6925778641792824934, guid: c5892ec5385c68147b1bc7523f710ec2, type: 3}
       propertyPath: m_IsActive

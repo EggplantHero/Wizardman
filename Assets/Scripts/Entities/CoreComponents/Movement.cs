@@ -8,7 +8,9 @@ public class Movement : CoreComponent
     public int facingDirectionX { get; private set; }
     private int facingDirectionY;
     public float movementSpeed;
+    [HideInInspector] public float defaultMovementSpeed;
     public float defaultGravityScale;
+
     private float terminalVelocity;
 
     protected override void Awake()
@@ -18,6 +20,8 @@ public class Movement : CoreComponent
         facingDirectionX = 1;
         facingDirectionY = 1;
         terminalVelocity = 25f;
+
+        defaultMovementSpeed = movementSpeed;
     }
 
     protected void Start()
@@ -73,6 +77,10 @@ public class Movement : CoreComponent
     public void ResetGravity()
     {
         entity.rbody.gravityScale = defaultGravityScale * gravityDirection;
+    }
+    public void ResetMovementSpeed()
+    {
+        movementSpeed = defaultMovementSpeed;
     }
     public void SetMass(float value)
     {

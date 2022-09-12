@@ -8,7 +8,7 @@ public class Clock : MonoBehaviour
     public ClockHand hourHand;
     public ClockHand secondHand;
 
-    public void Awake()
+    public virtual void Awake()
     {
         Display(false);
     }
