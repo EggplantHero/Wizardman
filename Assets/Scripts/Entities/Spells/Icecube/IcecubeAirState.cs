@@ -27,4 +27,10 @@ public class IcecubeAirState : State
             icecube.stateMachine.SetState(icecube.groundedState);
         }
     }
+
+    public override void OnTriggerEnter2D(Collider2D col)
+    {
+        base.OnTriggerEnter2D(col);
+        icecube.CrushEnemy(col);
+    }
 }

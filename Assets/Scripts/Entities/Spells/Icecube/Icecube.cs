@@ -33,14 +33,14 @@ public class Icecube : AttackMagic
             Singleton.Main.AudioManager.Play(SoundType.SFX_IceCollision);
         }
 
-        CrushEnemy(col);
+        CrushEnemy(col.collider);
     }
 
     public override void OnCollisionStay2D(Collision2D col)
     {
         base.OnCollisionStay2D(col);
 
-        CrushEnemy(col);
+        CrushEnemy(col.collider);
     }
 
     //allowedDifference between 0 and 1
@@ -60,12 +60,12 @@ public class Icecube : AttackMagic
         return true;
     }
 
-    private void CrushEnemy(Collision2D col)
+    public void CrushEnemy(Collider2D col)
     {
         Entity entity = col.transform.GetComponentInParent<Entity>();
         if (entity is null) return;
 
-        if (!(col.collider.name == "Body" || col.collider.name == "PlayerBody")) return;
+        if (!(col.name == "Body" || col.name == "PlayerBody")) return;
 
         IDamageable damageable = entity.GetComponentInChildren<IDamageable>();
 
