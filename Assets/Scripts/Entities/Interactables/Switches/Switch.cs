@@ -8,6 +8,8 @@ public class Switch : Entity
     public SwitchOffState OffState { get; private set; }
     public bool On { get; private set; }
 
+    public bool OnByDefault;
+
     public void TurnOn()
     {
         On = true;

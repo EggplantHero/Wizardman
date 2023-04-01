@@ -19,7 +19,7 @@ public class Torch : Switch, ITriggerable
 
     public void Start()
     {
-        if (On)
+        if (OnByDefault)
         {
             stateMachine.Initialize(LitState);
         }

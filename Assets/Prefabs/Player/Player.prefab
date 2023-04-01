@@ -421,6 +421,7 @@ MonoBehaviour:
   maxHealth: 3
   currentHealth: 0
   vulnerabilities: 00000000010000000200000003000000
+  Friendly: 1
 --- !u!1 &2396105827484923881
 GameObject:
   m_ObjectHideFlags: 0

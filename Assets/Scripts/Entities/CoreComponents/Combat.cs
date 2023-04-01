@@ -36,6 +36,7 @@ public class Combat : CoreComponent, IDamageable
         get => vulnerabilities;
     }
 
+
     public void Heal(int amount)
     {
         currentHealth += amount;

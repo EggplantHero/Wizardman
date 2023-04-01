@@ -42,10 +42,11 @@ public class PlayerLightningState : PlayerCastState
 
     public override void OnCollisionEnter2D(Collision2D col)
     {
+
         Debug.Log(col);
         base.OnCollisionEnter2D(col);
         Debug.Log(col.collider.name);
-        
+
         if (col.gameObject.name == "Breakable")
         {
             Singleton.Main.AudioManager.Play(SoundType.SFX_FireballExplosion);
@@ -54,20 +55,45 @@ public class PlayerLightningState : PlayerCastState
             return;
         };
 
+
         player.movement.ResetGravity();
         if (Movement.gravityDirection == -1)
         {
             player.movement.FlipY();
         }
 
+
+
         Singleton.Main.AudioManager.Play(SoundType.SFX_LightningBoom);
-        player.animator.Play("LightningLand");
         CinemachineShake.Instance.ShakeCamera(5f, .2f);
+
+        if (col.gameObject.name == "Spring")
+        {
+            player.movement.SetVelocityY(playerData.lightningSpeed * 2);
+            ExitState();
+            return;
+        }
+
+        player.animator.Play("LightningLand");
     }
 
     public override void Update()
     {
         base.Update();
+        //for security, prevents moving up while in lightning state
+        if (player.rbody.velocity.y > 0)
+        {
+            player.movement.SetVelocityY(0);
+            player.movement.ResetGravity();
+            if (Movement.gravityDirection == -1)
+            {
+                player.movement.FlipY();
+            }
+            Singleton.Main.AudioManager.Play(SoundType.SFX_LightningBoom);
+            CinemachineShake.Instance.ShakeCamera(5f, .2f);
+            player.animator.Play("LightningLand");
+            ExitState();
+        }
     }
 
     public override void ExitState()

@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52f942ca9511f354a8efbf325740f4ab, type: 3}
+  m_Name: Stone
+  m_EditorClassIdentifier: 
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Transform:
+    e00: 1
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  m_InstancedGameObject: {fileID: 0}
+  m_Flags: 1
+  m_ColliderType: 1
+  Sprites:
+  - Sprite: {fileID: 7610409138527134687, guid: 5a792357d8dce1443b4ec7fa00c0911f, type: 3}
+    Weight: 1
+  - Sprite: {fileID: 3078873791618609729, guid: 5a792357d8dce1443b4ec7fa00c0911f, type: 3}
+    Weight: 1
+  - Sprite: {fileID: -6717968284228741391, guid: 5a792357d8dce1443b4ec7fa00c0911f, type: 3}
+    Weight: 1
+  - Sprite: {fileID: 6675430467372700190, guid: 5a792357d8dce1443b4ec7fa00c0911f, type: 3}
+    Weight: 1
+  - Sprite: {fileID: -3907477268837559894, guid: 5a792357d8dce1443b4ec7fa00c0911f, type: 3}
+    Weight: 1
+  - Sprite: {fileID: -1191096010611743226, guid: 5a792357d8dce1443b4ec7fa00c0911f, type: 3}
+    Weight: 1
+  - Sprite: {fileID: 5020987798129651975, guid: 5a792357d8dce1443b4ec7fa00c0911f, type: 3}
+    Weight: 1

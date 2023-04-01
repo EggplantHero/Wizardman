@@ -51,7 +51,8 @@ MonoBehaviour:
   knockbackStrength: 20
   castSFX: 9
   OnHitSFX: 11
-  destroyOnHit: 0
+  destroyThisOnHit: 0
+  IsFriendly: 1
 --- !u!50 &5956352763911571155
 Rigidbody2D:
   serializedVersion: 4

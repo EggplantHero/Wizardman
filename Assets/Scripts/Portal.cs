@@ -6,7 +6,6 @@ public class Portal : MonoBehaviour
 {
     public Transform Destination;
 
-
     void OnTriggerEnter2D(Collider2D col)
     {
         Entity entity = col.gameObject.GetComponentInParent<Entity>();
@@ -14,9 +13,5 @@ public class Portal : MonoBehaviour
         {
             entity.transform.position = Destination.position;
         }
-    }
-
-    void OnTriggerExit2D(Collider2D col)
-    {
     }
 }

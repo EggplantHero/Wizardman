@@ -7,6 +7,7 @@ public class Enemy : Entity
 {
     [SerializeField] private float knockbackStrength;
     [SerializeField] private int damage;
+    [SerializeField] private bool stompable = true;
     public override void OnCollisionEnter2D(Collision2D col)
     {
         base.OnCollisionEnter2D(col);
@@ -14,7 +15,7 @@ public class Enemy : Entity
         {
             DamagePlayer(col, DamageType.DMG_Physical);
         }
-        if (col.collider.name == "Feet")
+        if (col.collider.name == "Feet" && stompable)
         {
             Singleton.Main.AudioManager.Play(SoundType.SFX_Bounce);
             combat.Damage(1, DamageType.DMG_Physical);

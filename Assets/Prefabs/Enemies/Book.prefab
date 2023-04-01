@@ -190,6 +190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 2
+  defaultMovementSpeed: 0
   defaultGravityScale: 3.5
 --- !u!1 &5884671633780850859
 GameObject:
@@ -366,7 +367,7 @@ Animator:
   m_GameObject: {fileID: 5989715953586669212}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4821049c90d0480479b79cf8e69d1d27, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -389,6 +390,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   knockbackStrength: 6
   damage: 1
+  stompable: 1
 --- !u!1 &6636335579525650855
 GameObject:
   m_ObjectHideFlags: 0

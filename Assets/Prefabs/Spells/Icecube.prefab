@@ -257,6 +257,7 @@ MonoBehaviour:
   castSFX: 12
   OnHitSFX: 3
   destroyThisOnHit: 0
+  IsFriendly: 1
 --- !u!1 &1151002665770448192
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,6 +304,7 @@ MonoBehaviour:
   maxHealth: 1
   currentHealth: 0
   vulnerabilities: 01000000
+  Friendly: 0
 --- !u!1 &3754258566023549523
 GameObject:
   m_ObjectHideFlags: 0
@@ -504,6 +506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 0
+  defaultMovementSpeed: 0
   defaultGravityScale: 6
 --- !u!1001 &791478833928550134
 PrefabInstance:

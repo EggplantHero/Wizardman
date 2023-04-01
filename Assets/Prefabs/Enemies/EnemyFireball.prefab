@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6996939685988137261}
   - component: {fileID: 5674434971259313285}
-  m_Layer: 15
+  m_Layer: 16
   m_Name: Hitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,9 +59,10 @@ GameObject:
   - component: {fileID: 1915249502589527852}
   - component: {fileID: 7515666566080207863}
   - component: {fileID: 2508520034478463694}
-  - component: {fileID: 3775911061062770157}
-  m_Layer: 15
-  m_Name: Fireball
+  - component: {fileID: 2379645843292450766}
+  - component: {fileID: -4832841006647694923}
+  m_Layer: 16
+  m_Name: EnemyFireball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -175,7 +176,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3775911061062770157
+--- !u!114 &2379645843292450766
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -184,16 +185,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1136080557964162480}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12188073dd170614ab5676738577e25b, type: 3}
+  m_Script: {fileID: 11500000, guid: 69891cc9f53d5824db8def07c834993a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spellType: 1
-  damage: 1
-  damageType: 1
   knockbackStrength: 5
-  castSFX: 5
-  OnHitSFX: 4
-  destroyThisOnHit: 1
+  damage: 1
+  stompable: 0
+--- !u!114 &-4832841006647694923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136080557964162480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1ccf7db911465e42903692b2527f431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1342001333587286840
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,7 +213,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5368060583396906494}
   - component: {fileID: 8686679677190380946}
-  m_Layer: 15
+  m_Layer: 16
   m_Name: CollisionSenses
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -257,7 +266,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5947636856874943293}
   - component: {fileID: 7658463598383396314}
-  m_Layer: 15
+  m_Layer: 16
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -304,7 +313,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8099433432177375903}
   - component: {fileID: 8285314082316333252}
-  m_Layer: 15
+  m_Layer: 16
   m_Name: Movement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -415,9 +424,21 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2949170047881988223, guid: c5892ec5385c68147b1bc7523f710ec2, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 3200186158460530320, guid: c5892ec5385c68147b1bc7523f710ec2, type: 3}
       propertyPath: m_Name
       value: Light
+      objectReference: {fileID: 0}
+    - target: {fileID: 3200186158460530320, guid: c5892ec5385c68147b1bc7523f710ec2, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450276716023305041, guid: c5892ec5385c68147b1bc7523f710ec2, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3450276716023305041, guid: c5892ec5385c68147b1bc7523f710ec2, type: 3}
       propertyPath: m_IsActive
@@ -427,9 +448,9 @@ PrefabInstance:
       propertyPath: m_Color.g
       value: 0.27971533
       objectReference: {fileID: 0}
-    - target: {fileID: 8090119723502852473, guid: c5892ec5385c68147b1bc7523f710ec2, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
+    - target: {fileID: 6925778641792824934, guid: c5892ec5385c68147b1bc7523f710ec2, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8090119723502852473, guid: c5892ec5385c68147b1bc7523f710ec2, type: 3}
       propertyPath: m_LocalPosition.x
